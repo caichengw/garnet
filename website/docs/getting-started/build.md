@@ -43,7 +43,7 @@ Now, you are ready to deploy the Garnet server. This is simple, run the below::
 
 ```bash
 cd main/GarnetServer
-dotnet run -c Release --f net8.0
+dotnet run -c Release -f net8.0
 ```
 
 :::tip
@@ -53,13 +53,13 @@ By default, Garnet listens to TCP port 3278, make sure to adjust your firewall s
 To see the configurable options and their defaults, run the below command. You can configure index size, memory size, page size, data file paths and checkpoint paths, IP address to bind to, port number to run on, etc.
 
 ```bash
-dotnet run -c Release --f net8.0 -- --help
+dotnet run -c Release -f net8.0 --help
 ```
 
 :::tip
 For running the server with an index size of 512MB (instead of the default), run this:
 ```bash
-dotnet run -c Release -f net8.0 -- -i 512m
+dotnet run -c Release -f net8.0 -i 512m
 ```
 :::
 
